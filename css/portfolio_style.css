@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Moonrocks&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Slab:wght@500&family=Rubik+Moonrocks&family=Ubuntu&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+.logo img{
+    width: 85%;
+    height: 50px;
+    border: 3px solid white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0;
+    cursor: pointer;
+    /* z-index: 1; */
+    
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+    color: rgb(12 190 190);
+}
+
+.background{
+    background: white;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.sec1{
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.heading{
+    font-size: 3.81rem;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(12 190 190);
+    text-align: center;
+    padding: 30px 0px;
+
+    /* text-shadow: 0px 0.04em 1.3em orange; */
+}
+
+.box{
+
+    padding: 1.875em 1.875em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.thumbnail
+{
+    background-color: white;
+    color: rgb(12 190 190);;
+    /* font-family: ; */
+    width: 26.5%;
+    transition: 0.60s;
+    box-shadow: -5px 5px 10px rgb(12 190 190);;
+    margin: 0 3.33%;
+    min-width: 200px;
+}
+
+.thumbnail:hover
+{
+    border-color: transparent;
+    transform: scale(1.03);
+    transition: 0.60s;
+}
+
+
+.thumbnailtext
+{
+    font-size: 1.9rem;
+    font-family: "Raleway";
+    padding: 4% 4%;
+}
+
+.thumbnail img 
+{
+    width: 92%;
+    padding: 0 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn{
+    padding: 0.6em 1.2em;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: none;
+    color: rgb(12 190 190);;
+    cursor: pointer;
+    font-family: "Raleway";
+    font-size: 1.4rem;
+    
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+
+}
+
+.thumbnailbutton1 
+{
+    
+    transition: 0.6s;
+    width: 92%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+
+}
+
+.thumbnailbutton1:hover 
+{
+color: black;
+background-color: rgb(12 190 190);
+transition: 0.6s;
+border: 2px solid black;
+}
+
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+@media (max-width:1140px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .thumbnail{
+        margin-bottom: 5%;
+        min-width: 350px;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .navbar{
+        position: relative;
+    }
+}
